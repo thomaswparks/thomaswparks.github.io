@@ -274,6 +274,7 @@ section {
 
 .text-container {
     text-align: justify;
+    padding: 10px;
 }
 
 .about-details-container {
