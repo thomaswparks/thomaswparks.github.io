@@ -25,6 +25,7 @@
         margin: 0 5%;
     }
     .section__pic-container {
+	display: flex;
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -58,6 +59,7 @@
         margin: 0 5%;
     }
     .section__pic-container {
+	display: flex;
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -104,6 +106,7 @@
         text-align: center;
     }
     .section__pic-container {
+	display: flex;
         width: auto;
         height: 46vh;
         justify-content: center;
