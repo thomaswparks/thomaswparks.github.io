@@ -28,6 +28,7 @@
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
+	justify-content: center;
     }
     .about-containers {
 		margin-top: 0;
@@ -60,6 +61,7 @@
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
+	justify-content: center;
     }
     .about-containers {
         margin-top: 0;
