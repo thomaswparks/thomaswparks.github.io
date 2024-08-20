@@ -75,7 +75,7 @@
         height: 40vh;
     }
     #profile {
-        height: 83vh;
+        height: 100%;
         margin-bottom: 0;
     }
     article {
@@ -87,6 +87,10 @@
     }
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
+    }
+
+    #socials-container {
+	padding-bottom: 5px;
     }
     .contact-info-container {
         margin: 0;
