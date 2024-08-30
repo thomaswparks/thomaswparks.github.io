@@ -1,11 +1,5 @@
-@media screen and (max-width: 1400px) {
-	.about-containers {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 1800px) {
-	#experience-details-container {
+@media screen and (max-width: 1500px) {
+    #experience-details-container {
         margin-top: 2rem;
     }
     #profile, .section-container {
@@ -24,6 +18,15 @@
     section {
         margin: 0 5%;
     }
+    #socials-container, .btn-container {
+        margin-top: 30px;
+    }
+    .section__text__p1 {
+        padding-top: 20px;
+    }
+    .title {
+        padding-bottom: 20px;
+    }
     .section__pic-container {
 	display: flex;
         width: 275px;
@@ -34,9 +37,19 @@
     .about-containers {
 		margin-top: 0;
     }
+    #contact {
+        justify-content: flex-start;
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+	.about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1250px) {
     #desktop-nav {
         display: none;
     }
@@ -45,6 +58,9 @@
     }
     #experience-details-container {
         margin-top: 2rem;
+    }
+    .project-title {
+        font-size: 1rem;
     }
     #profile, .section-container {
         display: block;
@@ -70,6 +86,28 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .project-title {
+        font-size: .9rem;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .linkedin-icon {
+        width: 40px;
+        height: auto;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    #projects>.experience-details-container>.about-containers,
+    #experience>.experience-details-container>.about-containers {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
@@ -88,7 +126,6 @@
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
-
     #socials-container {
 	padding-bottom: 5px;
     }
@@ -97,6 +134,10 @@
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .experience-sub-title {
         font-size: 1.25rem;
