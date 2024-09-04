@@ -1,9 +1,9 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
-}
+// function toggleMenu() {
+//     const menu = document.querySelector(".menu-links");
+//     const icon = document.querySelector(".sidebar-hamburger-icon");
+//     menu.classList.toggle("open")
+//     icon.classList.toggle("open")
+// }
 
 let alertBoxContainer = document.querySelector('.alert__box__container');
 let viewAlertBtn1 = document.querySelector('.coming-soon-btn-1');

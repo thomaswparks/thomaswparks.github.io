@@ -8,74 +8,88 @@
 		<link rel="stylesheet" href="styles/mediaqueries.css">
 	</head>
 	<body>
+		<input type="checkbox" class="checkbox" id="click" hidden>
+		<!-- sidebar hamburger icon -->
+		<div class="hamburger-wrapper">
+			<label for="click">
+				<div class="hamburger-icon">
+					<span class="line-1 hamburger-icon-line"></span>
+					<span class="line-2 hamburger-icon-line"></span>
+					<span class="line-3 hamburger-icon-line"></span>
+				</div>
+			</label>
+		</div>
+		<!-- end of sidebar hamburger icon -->
+		<!-- sidebar -->
+		<nav id="sidebar" class="sidebar-container">
+			<div class="sidebar-logo logo"><a href="#" class="sidebar-logo-link">Tom Parks</a></div>
+			<div class="sidebar-links-container">
+				<div class="sidebar-links">
+					<li class="sidebar-link-item"><a class="sidebar-link link" href="#about" onclick="toggleMenu()">About</a></li>
+					<li class="sidebar-link-item"><a class="sidebar-link link" href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li class="sidebar-link-item"><a class="sidebar-link link" href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li class="sidebar-link-item"><a class="sidebar-link link" href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<!-- end sidebar -->
+		<!-- desktop nav -->
 		<nav id="desktop-nav">
-			<div class="logo">Tom Parks</div>
+			<div class="desktop-logo logo">Tom Parks</div>
 			<div>
-				<ul class="nav-links">
-					<li><a href="#about">About</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+				<ul class="desktop-nav-links">
+					<li class="desktop-nav-link-item"><a class="desktop-nav-link link" href="#about">About</a></li>
+					<li class="desktop-nav-link-item"><a class="desktop-nav-link link" href="#experience">Experience</a></li>
+					<li class="desktop-nav-link-item"><a class="desktop-nav-link link" href="#projects">Projects</a></li>
+					<li class="desktop-nav-link-item"><a class="desktop-nav-link link" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
-		<nav id="hamburger-nav">
-			<div class="logo">Tom Parks</div>
-			<div class="hamburger-menu">
-				<div class="hamburger-icon" onclick="toggleMenu()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="menu-links">
-					<li><a href="#about" onclick="toggleMenu()">About</a></li>
-					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-				</div>
-			</div>
-		</nav>
+		<!-- end desktop nav -->
+		<!-- profile seciton -->
 		<section id="profile">
-			<div class="section-container">
-				<div class="section__pic-container">
-					<img src="./assets/images/profile-pic-v2.jpg" alt="Tom Parks - profile picture" style="border-radius: 50%">
+			<div class="section-container profile-section-container">
+				<div class="section__pic-container profile-pic-container">
+					<img src="./assets/images/profile-pic-v2.jpg" alt="Tom Parks - profile picture" style="border-radius: 50%" class="profile-pic">
 				</div>
-				<div class="section__text">
-					<p class="section__text__p1">Hello, I'm</p>
-					<h1 class="title">Tom Parks</h1>
-					<p class="section__text__p2">Software Engineer</p>
-					<div class="btn-container">
+				<div class="section__text profile-seciton__text">
+					<p class="section__text__p1 profile-section__text__p1">Hello, I'm</p>
+					<h1 class="title profile-title">Tom Parks</h1>
+					<p class="section__text__p2 profile-section__text__p2">Software Engineer</p>
+					<div class="btn-container profile-btn-container">
 						<button class="btn btn-color-2" onclick="window.open('./assets/documents/Parks, Thomas.pdf')">Download Resume</button>
 						<button class="btn btn-color-1" onclick="location.href='./index.html#contact'">Contact Info</button>
 					</div>
 					<div id="socials-container">
-						<img src="./assets/images/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/tomwparks/')">
-						<img src="./assets/images/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/thomaswparks')">
+						<img src="./assets/images/linkedin.png" alt="My LinkedIn profile" class="icon social-icon linkedin-icon" onclick="window.open('https://www.linkedin.com/in/tomwparks/')">
+						<img src="./assets/images/github.png" alt="My GitHub profile" class="icon social-icon github-icon" onclick="window.open('https://github.com/thomaswparks')">
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- end profile section -->
+		<!-- about me seciton -->
 		<section id="about">
-			<p class="section__text__p1">Get To Know More</p>
-			<h1 class="title">About Me</h1>
-			<div class="section-container">
-				<div class="section__pic-container">
+			<p class="section__text__p1 about-section__text__p1">Get To Know More</p>
+			<h1 class="title about-title">About Me</h1>
+			<div class="section-container about-section-container">
+				<div class="section__pic-container about-section__pic-container">
 					<img src="./assets/images/casual.jpg" alt="Profile Picture" class="about-pic">
 				</div>
-				<div class="about-details-container">
-					<div class="about-containers">
-						<div class="details-container">
+				<div class="about-details-container about-content-container">
+					<div class="about-containers about-cards-container">
+						<div class="details-container about-card card">
 							<img src="./assets/images/experience.png" alt="experience icon" class="icon">
 							<h3>Experience</h3>
 							<p>24 years in IT and Electronics<br>2+ years of full-stack web development<br>TS/SCI</p>
 						</div>
-						<div class="details-container">
+						<div class="details-container about-card card">
 							<img src="./assets/images/education.png" alt="education icon" class="icon">
 							<h3>Education & Certificates</h3>
 							<p>B.Sc. Comuputer Science<br>As.Sc. Electronic Systems<br>Security+ Certified<br>Certified Professional Innovator - University of Michigan</p>
 						</div>
 					</div>
-					<div class="text-container">
+					<div class="text-container about-text-container">
 						<br><p>Curiosity drives my passion… Software Engineering</p>
 						<br><p>From a young age, my curiosity led me to dismantle toys to understand their mechanics. This same curiosity now drives me to dissect databases, reverse engineer systems, and explore virtualization in my home lab. It has also pushed me to master HTML, JavaScript, and CSS. My insatiable thirst for knowledge and the desire to create has propelled me to earn a degree in Computer Science, graduating at the top of my class.</p> 
 						<br><p>For the past 24 years, I’ve been deeply involved in electronics, radio frequency systems, and IT. However, I always felt something was missing. A few years ago, I identified that gap and embarked on a journey to overcome it, starting by earning my degree and graduating Summa Cum Laude. After this achievement, I continued to broaden my knowledge while completing my career in the U.S. Air Force, taking on roles such as Network Engineer, Innovation Leader, and IT Project Manager.</p>
@@ -85,12 +99,14 @@
 			</div>
 			<img src="./assets/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='index.html#experience'">
 		</section>
+		<!-- end about me section -->
+		<!-- experience seciton -->
 		<section id="experience">
-			<p class="section__text__p1">Explore My</p>
-			<h1 class="title">Experience</h1>
-			<div class="experience-details-container">
-				<div class="about-containers">
-					<div class="details-container">
+			<p class="section__text__p1 experience-section__text__p1">Explore My</p>
+			<h1 class="title experience-title">Experience</h1>
+			<div class="experience-details-container experience-content-container">
+				<div class="about-containers experience-cards-container">
+					<div class="details-container experience-card card">
 						<h2 class="experience-sub-title">Frontend Development</h2>
 						<div class="article-container">
 							<article>
@@ -137,7 +153,7 @@
 							</article>
 						</div>
 					</div>
-					<div class="details-container">
+					<div class="details-container experience-card card">
 						<h2 class="experience-sub-title">Backend Development</h2>
 						<div class="article-container">
 							<article>
@@ -188,40 +204,42 @@
 			</div>
 			<img src="./assets/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='index.html#projects'">
 		</section>
+		<!-- end experience section -->
+		<!-- projects section -->
 		<section id="projects">
-			<p class="section__text__p1">Browse My Recent</p>
-			<h1 class="title">Projects</h1>
-			<div class="experience-details-container">
-				<div class="about-containers">
-					<div class="details-container color-container" id="ims-webapp">
-						<div class="article-container">
+			<p class="section__text__p1 projects-section__text__p1">Browse My Recent</p>
+			<h1 class="title projects-title">Projects</h1>
+			<div class="experience-details-container projects-content-container">
+				<div class="about-containers projects-cards-container">
+					<div class="details-container color-container projects-card card" id="ims-webapp">
+						<div class="article-container projects-img-container">
 							<img src="./assets/images/ims-webapp.png" alt="IMS WebApp" class="project-img">
 						</div>
 						<h2 class="experience-sub-title project-title">IMS WebApp</h2>
-						<div class="btn-container">
-							<button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/thomaswparks/IMS_WebApp_v1')">
+						<div class="btn-container project-card-btn-container">
+							<button class="btn btn-color-2 project-btn project-card-btn" onclick="window.open('https://github.com/thomaswparks/IMS_WebApp_v1')">
 								GitHub
 							</button>
 						</div>
 					</div>
-					<div class="details-container color-container" id="inspection-tracker">
-						<div class="article-container">
+					<div class="details-container color-container projects-card card" id="inspection-tracker">
+						<div class="article-container projects-img-container">
 							<img src="./assets/images/inspection-tracker.png" alt="Inspection Tracking Database" class="project-img">
 						</div>
 						<h2 class="experience-sub-title project-title">Inspection Tracker</h2>
-						<div class="btn-container">
-							<button class="btn btn-color-2 project-btn coming-soon-btn-1">
+						<div class="btn-container project-card-btn-container">
+							<button class="btn btn-color-2 project-btn coming-soon-btn-1 project-card-btn">
 								Datasheet
 							</button>
 						</div>
 					</div>
-					<div class="details-container color-container" id="usaf-project-roads">
-						<div class="article-container">
+					<div class="details-container color-container projects-card card" id="usaf-project-roads">
+						<div class="article-container projects-img-container">
 							<img src="./assets/images/usaf-project-roads.png" alt="USAF Project ROADS" class="project-img">
 						</div>
 						<h2 class="experience-sub-title project-title">Virtual WAN</h2>
-						<div class="btn-container">
-							<button class="btn btn-color-2 project-btn coming-soon-btn-2">
+						<div class="btn-container project-card-btn-container">
+							<button class="btn btn-color-2 project-btn coming-soon-btn-2 project-card-btn">
 								Datasheet
 							</button>
 						</div>
@@ -239,33 +257,38 @@
 			</div>
 			<img src="./assets/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='index.html#contact'">
 		</section>
+		<!-- end projects section -->
+		<!-- contact section -->
 		<section id="contact">
-			<p class="section__text__p1">Get in Touch</p>
-			<h1 class="title">Contact Me</h1>
-			<div class="contact-info-upper-container">
+			<p class="section__text__p1 contact-section__text__p1">Get in Touch</p>
+			<h1 class="title contact-title">Contact Me</h1>
+			<div class="contact-info-upper-container contact-content-container card">
 				<div class="contact-info-container">
-					<img src="./assets/images/email.png" alt="Eamil Icon" class="icon contact-icon email-icon">
-					<p><a href="mailto:thomaswparks@gmail.com">thomaswparks@gmail.com</a></p>
+					<img src="./assets/images/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+					<p class="contact-info-link-paragraph"><a href="mailto:thomaswparks@gmail.com" class="contact-info-link contact-info-link-email link">thomaswparks@gmail.com</a></p>
 				</div>
 				<div class="contact-info-container">
 					<img src="./assets/images/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon linkedin-icon">
-					<p><a href="https://www.linkedin.com/in/tomwparks/" target="_blank">www.linkedin.com/in/tomwparks</a></p>
+					<p class="contact-info-link-paragraph"><a href="https://www.linkedin.com/in/tomwparks/" target="_blank" class="contact-info-link contact-info-link-linkedin link">www.linkedin.com/in/tomwparks</a></p>
 				</div>
 			</div>
 		</section>
-		<footer>
-			<nav>
-				<div class="nav-links-container">
-					<ul class="nav-links">
-						<li><a href="#about">About</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
+		<!-- end contact section -->
+		<!-- footer seciton -->
+		<footer class="footer">
+			<nav class="footer-nav">
+				<div class="nav-links-container footer-nav-links-container">
+					<ul class="nav-links footer-nav-links-list">
+						<li class="footer-nav-links-item"><a href="#about" class="footer-nav-link">About</a></li>
+						<li class="footer-nav-links-item"><a href="#experience" class="footer-nav-link">Experience</a></li>
+						<li class="footer-nav-links-item"><a href="#projects" class="footer-nav-link">Projects</a></li>
+						<li class="footer-nav-links-item"><a href="#contact" class="footer-nav-link">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
-			<p>Copyright &#169; 2024 Tom Parks. All Rights Reserved.</p>
+			<p class="footer-paragraph">Copyright &#169; 2024 Tom Parks. All Rights Reserved.</p>
 		</footer>
+		<!-- end footer seciton -->
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
