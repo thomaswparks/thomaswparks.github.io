@@ -162,9 +162,7 @@
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
-    .about-text-container {
-        
-    }
+   
     #socials-container {
 	padding-bottom: 5px;
     }
@@ -206,6 +204,23 @@
     }
 }
 
-@media (max-width: 412px) {
-        
+@media (max-width: 500px) {
+    section {
+        margin: 5%;
+    }
+    .about-cards-container {
+        margin: 0;
+    }
+    .article-container {
+        gap: 1rem;
+    }
+    article {
+        width: 10rem;
+    }
+    .experience-description {
+        font-size: 1rem;
+    }
+    .contact-info-upper-container {
+        margin: 0;
+    }
 }

@@ -81,13 +81,14 @@ p {
 
 .sidebar-logo {
     margin-top: 17vh;
-    font-size: 2.3rem;
 }
 
 .sidebar-logo-link {
     color: #ccc;
     text-decoration: underline;
     text-underline-offset: 1rem;
+    font-size: 2.3rem;
+    transition: all 300ms ease;
 }
 
 .sidebar-link-item{
@@ -96,7 +97,7 @@ p {
 }
 
 .sidebar-link {
-    color: #6b6969;
+    color: #a4a4a4;
     text-decoration: none;
     transition: all 300ms ease;
 }
@@ -105,6 +106,11 @@ p {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.sidebar-logo-link:hover {
+    color: gray;
     text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -330,9 +336,6 @@ section {
     padding: 1.5rem;
     flex: 1;
     background: white;
-    /* border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163); */
     text-align: center;
 }
 
